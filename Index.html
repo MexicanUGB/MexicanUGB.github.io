@@ -4,51 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MexicanUBG - Unblocked Games</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
-        h1 {
-            margin: 0;
-        }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 0 20px;
-        }
-        .game-link {
-            display: block;
-            background-color: #007bff;
-            color: #fff;
-            text-decoration: none;
-            padding: 10px 20px;
-            margin-bottom: 10px;
-            border-radius: 5px;
-            text-align: center;
-        }
-        .game-link:hover {
-            background-color: #0056b3;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>MexicanUBG - Unblocked Games</h1>
+        <h1>MexicanUBG</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#games">Games</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <div class="container">
-        <a href="game1.html" class="game-link">Game 1</a>
-        <a href="game2.html" class="game-link">Game 2</a>
-        <a href="game3.html" class="game-link">Game 3</a>
-        <!-- Add more game links as needed -->
-    </div>
+    <main>
+        <section id="home">
+            <h2>Welcome to MexicanUBG</h2>
+            <p>Enjoy a variety of unblocked games that you can play at school or work.</p>
+        </section>
+        <section id="games">
+            <h2>Games</h2>
+            <div class="game-list">
+                <!-- Game items will be added here -->
+                <div class="game-item">
+                    <h3>Game Title 1</h3>
+                    <p>Description of Game 1</p>
+                    <a href="game1.html">Play Now</a>
+                </div>
+                <div class="game-item">
+                    <h3>Game Title 2</h3>
+                    <p>Description of Game 2</p>
+                    <a href="game2.html">Play Now</a>
+                </div>
+                <!-- Add more games as needed -->
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 MexicanUBG. All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
 </body>
 </html>
